@@ -43,7 +43,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(70, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log('Server listen on port 70!')
 });
 module.exports = app;
